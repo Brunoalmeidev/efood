@@ -1,16 +1,13 @@
-import Banner from './components/Banner'
-import Header from './components/Header'
-import { GlobalCss } from './styles'
+import { BrowserRouter } from 'react-router-dom'
+import Router from './'
+import GlobalStyle from './global/globalStyles'
 
 function App() {
   return (
-    <>
-      <GlobalCss />
-      <div className="container">
-        <Header />
-      </div>
-      <Banner />
-    </>
+    <BrowserRouter>
+      <GlobalStyle />
+      <Router />
+    </BrowserRouter>
   )
 }
 
